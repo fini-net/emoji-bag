@@ -5,9 +5,9 @@
 ![GitHub License](https://img.shields.io/github/license/fini-net/emoji-bag)
 ![GitHub watchers](https://img.shields.io/github/watchers/fini-net/emoji-bag)
 
-A good starting place for something. (TODO)
+A collection of emojis for your [Zulip](https://zulip.com/) and Slack fun times.
 
-## Contibuting
+## Contributing
 
 - [Code of Conduct](.github/CODE_OF_CONDUCT.md)
 - [Contributing Guide](.github/CONTRIBUTING.md) includes a step-by-step guide to our

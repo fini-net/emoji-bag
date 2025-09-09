@@ -8,3 +8,54 @@ import? '.just/gh-process.just'
 list:
 	just --list
 	@echo "{{GREEN}}Your justfile is waiting for more scripts and snippets{{NORMAL}}"
+
+# download FINI emoji from Slack
+[group('Slack')]
+_slack_sync dir workspace:
+	[[ -d {{ dir }} ]] || mkdir -p {{ dir }}
+	cd {{ dir }} && slackdump emoji -workspace {{ workspace }}
+
+# authenticate to a new work space
+[group('Slack Authentication')]
+slack_new_workspace workspace:
+	slackdump workspace new {{ workspace }}
+
+# download BrightRoll Alumni emoji from Slack
+[group('Slack')]
+slack_brightroll:
+	just _slack_sync Slack/BrightRoll brightrollers
+
+# download DevOpsChat emoji from Slack
+[group('Slack')]
+slack_devopschat:
+	just _slack_sync Slack/DevOpsChat devopschat
+
+# download Eng-Managers emoji from Slack
+[group('Slack')]
+slack_eng_managers:
+	just _slack_sync Slack/Eng-Managers eng-managers
+
+# download FINI emoji from Slack
+[group('Slack')]
+slack_fini:
+	just _slack_sync Slack/FINI fininet
+
+# download HangOps emoji from Slack
+[group('Slack')]
+slack_hangops:
+	just _slack_sync Slack/HangOps hangops
+
+# download Haproxy emoji from Slack
+[group('Slack')]
+slack_haproxy:
+	just _slack_sync Slack/Haproxy haproxy
+
+# download Rands Leadership emoji from Slack
+[group('Slack')]
+slack_rands_leadership:
+	just _slack_sync Slack/RandsLeadership rands-leadership
+
+# download NetworkToCode emoji from Slack
+[group('Slack')]
+slack_networktocode:
+	just _slack_sync Slack/NetworkToCode networktocode

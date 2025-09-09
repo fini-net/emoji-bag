@@ -17,3 +17,10 @@ A collection of emojis for your [Zulip](https://zulip.com/) and Slack fun times.
 
 - [Getting Support](.github/SUPPORT.md)
 - [Security Policy](.github/SECURITY.md)
+
+## Thanks
+
+Thanks to these folks for making this possible:
+
+- [slackdump](https://github.com/rusq/slackdump) works well for me.
+- I'm looking forward to trying <https://github.com/rockymadden/slack-cli> soon.

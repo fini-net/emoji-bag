@@ -9,13 +9,13 @@ list:
 	just --list
 	@echo "{{GREEN}}Your justfile is waiting for more scripts and snippets{{NORMAL}}"
 
-# download FINI emoji from Slack
+# internal function to sync Slack emojis into this repo
 [group('Slack')]
 _slack_sync dir workspace:
 	[[ -d {{ dir }} ]] || mkdir -p {{ dir }}
 	cd {{ dir }} && slackdump emoji -workspace {{ workspace }}
 
-# authenticate to a new work space
+# authenticate to a new workspace
 [group('Slack Authentication')]
 slack_new_workspace workspace:
 	slackdump workspace new {{ workspace }}

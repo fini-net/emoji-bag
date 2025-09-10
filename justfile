@@ -20,6 +20,13 @@ _slack_sync dir workspace:
 slack_new_workspace workspace:
 	slackdump workspace new {{ workspace }}
 
+# turn a zip file into raw files
+[group('Slack Processing')]
+slack_process_zip directory:
+	cd {{ directory }} && unzip $(ls -tr *.zip | tail -1)
+	cd {{ directory }} && cat index.json | jq '.' > jq.json && mv jq.json index.json
+	# no README generated for now
+
 # download BrightRoll Alumni emoji from Slack
 [group('Slack')]
 slack_brightroll:

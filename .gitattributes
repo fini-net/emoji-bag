@@ -87,3 +87,5 @@
 .gitignore     export-ignore
 .gitkeep       export-ignore
 Slack/RandsLeadership/slackdump_20250908_192350.zip filter=lfs diff=lfs merge=lfs -text
+Slack/HangOps/slackdump_20250908_181031.zip filter=lfs diff=lfs merge=lfs -text
+Slack/HangOps/slackdump_20250908_181743.zip filter=lfs diff=lfs merge=lfs -text

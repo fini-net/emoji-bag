@@ -22,10 +22,11 @@ slack_new_workspace workspace:
 
 # turn a zip file into raw files
 [group('Slack Processing')]
-slack_process_zip directory:
+slack_process_zip directory: _on_a_branch
 	cd {{ directory }} && unzip $(ls -tr *.zip | tail -1)
 	cd {{ directory }} && cat index.json | jq '.' > jq.json && mv jq.json index.json
 	# no README generated for now
+	git add {{ directory }}
 
 # download BrightRoll Alumni emoji from Slack
 [group('Slack')]

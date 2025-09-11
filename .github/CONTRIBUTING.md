@@ -55,26 +55,40 @@ The full development cycle works via the command line.
 Run `just` anywhere in the repo to see which subcommands are available here.
 You should get a more colorful version of this:
 
-```bash
+```ShellSession
 % just
 just --list
 Available recipes:
     [Compliance]
-    compliance_check    # our own compliance check
+    compliance_check              # our own compliance check
 
     [Process]
-    branch branchname   # start a new branch
-    merge               # merge PR and return to starting point
-    pr                  # PR create 3.0
-    prweb               # view PR in web browser
-    release rel_version # make a release
-    sync                # escape from branch, back to starting point
+    branch branchname             # start a new branch
+    merge                         # merge PR and return to starting point
+    pr                            # PR create 3.2
+    prweb                         # view PR in web browser
+    release rel_version           # make a release
+    sync                          # escape from branch, back to starting point
+
+    [Slack]
+    slack_brightroll              # download BrightRoll Alumni emoji from Slack
+    slack_devopschat              # download DevOpsChat emoji from Slack
+    slack_eng_managers            # download Eng-Managers emoji from Slack
+    slack_fini                    # download FINI emoji from Slack
+    slack_hangops                 # download HangOps emoji from Slack
+    slack_haproxy                 # download Haproxy emoji from Slack
+    slack_networktocode           # download NetworkToCode emoji from Slack
+    slack_rands_leadership        # download Rands Leadership emoji from Slack
+
+    [Slack Authentication]
+    slack_new_workspace workspace # authenticate to a new workspace
+
+    [Slack Processing]
+    slack_process_zip directory   # turn a zip file into raw files
 
     [Utility]
-    clean_readme        # generate a clean README
-    utcdate             # print UTC date in ISO format
+    utcdate                       # print UTC date in ISO format
 
     [example]
-    list                # list recipes (default works without naming it)
-Your justfile is waiting for more scripts and snippets
+    list                          # list recipes (default works without naming it)
 ```

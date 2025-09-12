@@ -66,7 +66,7 @@ tokens downloaded.  This will usually fire something off in your web
 browser and it might hit your SSO system.
 
 I'm not sure how long these tokens last, but I have not had to
-re-authenticate yet.  So the tokens last for at lesat a few days.
+re-authenticate yet.  So the tokens last for at least a few days.
 If my interactive Slack experience is any guide these tokens
 are good for months.
 

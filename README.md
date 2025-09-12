@@ -65,6 +65,11 @@ Run `just slack_new_workspace $WORKSPACE_NAME` to get your authentication
 tokens downloaded.  This will usually fire something off in your web
 browser and it might hit your SSO system.
 
+I'm not sure how long these tokens last, but I have not had to
+re-authenticate yet.  So the tokens last for at lesat a few days.
+If my interactive Slack experience is any guide these tokens
+are good for months.
+
 ### Update justfile
 
 Add your new workspace in as a download recipe.  They're very short
@@ -78,6 +83,12 @@ get_slack_hangops:
 ```
 
 So you can see there's not much to change after you do the copy-pasta.
+
+1. Change the workspace name in the recipe name and the `just` line.
+2. Update the directory name to be a new one.
+3. Make the comment make sense for what you're adding
+
+Done!
 
 ### Verify justfile
 

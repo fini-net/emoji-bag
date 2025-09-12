@@ -29,41 +29,41 @@ slack_process_zip directory: _on_a_branch
 	git add {{ directory }}
 
 # download BrightRoll Alumni emoji from Slack
-[group('Slack')]
-slack_brightroll:
+[group('Slack Download')]
+get_slack_brightroll:
 	just _slack_sync Slack/BrightRoll brightrollers
 
 # download DevOpsChat emoji from Slack
-[group('Slack')]
-slack_devopschat:
+[group('Slack Download')]
+get_slack_devopschat:
 	just _slack_sync Slack/DevOpsChat devopschat
 
 # download Eng-Managers emoji from Slack
-[group('Slack')]
-slack_eng_managers:
+[group('Slack Download')]
+get_slack_eng_managers:
 	just _slack_sync Slack/Eng-Managers eng-managers
 
 # download FINI emoji from Slack
-[group('Slack')]
-slack_fini:
+[group('Slack Download')]
+get_slack_fini:
 	just _slack_sync Slack/FINI fininet
 
 # download HangOps emoji from Slack
-[group('Slack')]
-slack_hangops:
+[group('Slack Download')]
+get_slack_hangops:
 	just _slack_sync Slack/HangOps hangops
 
 # download Haproxy emoji from Slack
-[group('Slack')]
-slack_haproxy:
+[group('Slack Download')]
+get_slack_haproxy:
 	just _slack_sync Slack/Haproxy haproxy
 
 # download Rands Leadership emoji from Slack
-[group('Slack')]
-slack_rands_leadership:
+[group('Slack Download')]
+get_slack_rands_leadership:
 	just _slack_sync Slack/RandsLeadership rands-leadership
 
 # download NetworkToCode emoji from Slack
-[group('Slack')]
-slack_networktocode:
+[group('Slack Download')]
+get_slack_networktocode:
 	just _slack_sync Slack/NetworkToCode networktocode

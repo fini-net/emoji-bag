@@ -1,0 +1,15 @@
+# .repo.toml
+
+[about]
+description = "A bag of emojis. 👜🛍"
+topics = ["emoji", "slack", "slack-emoji", "zulip"]
+
+[urls]
+git_ssh = "git@github.com:fini-net/emoji-bag.git"
+web_url = "https://github.com/fini-net/emoji-bag"
+
+[flags]
+claude = false
+claude-review = false
+copilot-review = true
+standard-release = true

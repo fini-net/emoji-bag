@@ -11,5 +11,5 @@ web_url = "https://github.com/fini-net/emoji-bag"
 [flags]
 claude = false
 claude-review = false
-copilot-review = false
+copilot-review = true
 standard-release = true

@@ -17,7 +17,7 @@ REPO_REPO_NAME="emoji-bag"
 # Feature flags (strings: "true" or "false")
 FLAG_CLAUDE="false"
 FLAG_CLAUDE_REVIEW="false"
-FLAG_COPILOT_REVIEW="false"
+FLAG_COPILOT_REVIEW="true"
 FLAG_STANDARD_RELEASE="true"
 
 # Topics as array (for iteration)
